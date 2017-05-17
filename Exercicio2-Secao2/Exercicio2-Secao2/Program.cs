@@ -30,7 +30,7 @@ namespace Exercicio2_Secao2
                     case "down": post.DownVote(); break;
                     default: Console.WriteLine("Choose up or down!"); break;
                 }
-            } 
+            }
         }
     }
 }

@@ -2,14 +2,13 @@
 
 namespace Exercicio2_Secao2
 {
-    class Post {
-
+    class Post
+    {
         public int UpVotes { get; private set; }
         public int DownVotes { get; private set; }
         public DateTime DateCreation { get; private set; }
-        public string Description { get;  set; }
-        public string Title { get;  set; }
-
+        public string Description { get; set; }
+        public string Title { get; set; }
 
         public Post(string title, string description)
         {
