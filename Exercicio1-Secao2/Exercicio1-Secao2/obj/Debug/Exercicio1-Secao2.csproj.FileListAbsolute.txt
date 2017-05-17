@@ -1,0 +1,6 @@
+E:\C#\Intermediario\Exercicio1-Secao2\Exercicio1-Secao2\bin\Debug\Exercicio1-Secao2.exe.config
+E:\C#\Intermediario\Exercicio1-Secao2\Exercicio1-Secao2\bin\Debug\Exercicio1-Secao2.exe
+E:\C#\Intermediario\Exercicio1-Secao2\Exercicio1-Secao2\bin\Debug\Exercicio1-Secao2.pdb
+E:\C#\Intermediario\Exercicio1-Secao2\Exercicio1-Secao2\obj\Debug\Exercicio1-Secao2.exe
+E:\C#\Intermediario\Exercicio1-Secao2\Exercicio1-Secao2\obj\Debug\Exercicio1-Secao2.pdb
+E:\C#\Intermediario\Exercicio1-Secao2\Exercicio1-Secao2\obj\Debug\Exercicio1-Secao2.csprojResolveAssemblyReference.cache
