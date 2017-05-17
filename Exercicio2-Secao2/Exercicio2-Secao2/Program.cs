@@ -6,7 +6,6 @@ namespace Exercicio2_Secao2
     {
         static void Main(string[] args)
         {
-
             Console.WriteLine("Title to your post: ");
             var title = Console.ReadLine();
 
