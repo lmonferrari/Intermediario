@@ -7,36 +7,35 @@ namespace Exercicio1_Secao2
     {
         private bool _isRunning;
 
-        public DateTime StartTime { get; set; }
-        public DateTime StopTime { get; set; }
+        private DateTime _startTime;
+        private DateTime _stopTime;
 
         public Stopwatch()
         {
             _isRunning = false;
         }
 
-        public DateTime Start()
+        public void Start(DateTime start)
         {
             if (_isRunning)
                 throw new InvalidOperationException("Start");
 
             _isRunning = true;
-            return DateTime.Now;
+            this._startTime = start;
         }
 
-        public DateTime Stop()
+        public void Stop(DateTime stop)
         {
             if (!_isRunning)
                 throw new InvalidOperationException("Stop");
 
             _isRunning = false;
-            return DateTime.Now;
+            this._stopTime = stop;
         }
 
-        public TimeSpan Difference(DateTime start, DateTime stop)
+        public TimeSpan Difference()
         {
-            return stop - start;
+            return this._stopTime - this._startTime;
         }
-
     }
 }

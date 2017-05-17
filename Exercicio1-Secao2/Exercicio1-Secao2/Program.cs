@@ -15,17 +15,16 @@ namespace Exercicio1_Secao2
                 var keyPressed = Console.ReadKey().Key;
                 var stopWatch = new Stopwatch();
 
-                stopWatch.StartTime = stopWatch.Start();
+                stopWatch.Start(DateTime.Now);
 
                 Console.WriteLine("Press any key to stop!");
                 keyPressed = Console.ReadKey().Key;
 
                 if (keyPressed.Equals(ConsoleKey.Escape)) break;
 
-                stopWatch.StopTime = stopWatch.Stop();
+                stopWatch.Stop(DateTime.Now);
 
-                Console.WriteLine("Start time: {0}, Stop time: {1}", stopWatch.StartTime, stopWatch.StopTime);
-                Console.WriteLine("time: {0}\n", stopWatch.Difference(stopWatch.StartTime, stopWatch.StopTime));
+                Console.WriteLine("Stop - start = {0}\n", stopWatch.Difference());
             }
         }
     }
