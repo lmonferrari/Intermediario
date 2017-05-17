@@ -12,15 +12,17 @@ namespace Exercicio2_Secao2
 
         public Post(string title, string description)
         {
-            DateCreation = DateTime.Now;
             if (string.IsNullOrWhiteSpace(title))
                 title = "Lamme! You forget the title!";
 
             if (string.IsNullOrWhiteSpace(description))
                 description = "Oh Gosh! You forget the description!";
 
+            DateCreation = DateTime.Now;
             this.Description = description;
             this.Title = title;
+            this.UpVotes = 0;
+            this.DownVotes = 0;
         }
 
         public void UpVote()
