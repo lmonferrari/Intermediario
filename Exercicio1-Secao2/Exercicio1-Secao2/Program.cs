@@ -25,7 +25,7 @@ namespace Exercicio1_Secao2
                 stopWatch.StopTime = stopWatch.Stop();
 
                 Console.WriteLine("Start time: {0}, Stop time: {1}", stopWatch.StartTime, stopWatch.StopTime);
-                Console.WriteLine("time: {0}\n",stopWatch.Difference(stopWatch.StartTime, stopWatch.StopTime));
+                Console.WriteLine("time: {0}\n", stopWatch.Difference(stopWatch.StartTime, stopWatch.StopTime));
             }
         }
     }

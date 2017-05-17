@@ -1,20 +1,19 @@
 ﻿using System;
 
-namespace Exercicio1_Secao2 { 
+namespace Exercicio1_Secao2
+{
 
-class Stopwatch
+    class Stopwatch
     {
         private bool _isRunning;
 
         public DateTime StartTime { get; set; }
         public DateTime StopTime { get; set; }
 
-
         public Stopwatch()
         {
             _isRunning = false;
         }
-
 
         public DateTime Start()
         {
