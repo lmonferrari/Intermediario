@@ -6,7 +6,6 @@ namespace Exercicio1_Secao2
     class Stopwatch
     {
         private bool _isRunning;
-
         private DateTime _startTime;
         private DateTime _stopTime;
 
