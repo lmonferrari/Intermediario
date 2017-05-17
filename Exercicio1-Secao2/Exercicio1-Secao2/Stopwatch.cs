@@ -20,7 +20,7 @@ namespace Exercicio1_Secao2
                 throw new InvalidOperationException("Start");
 
             _isRunning = true;
-            this._startTime = start;
+            _startTime = start;
         }
 
         public void Stop(DateTime stop)
@@ -29,12 +29,12 @@ namespace Exercicio1_Secao2
                 throw new InvalidOperationException("Stop");
 
             _isRunning = false;
-            this._stopTime = stop;
+            _stopTime = stop;
         }
 
         public TimeSpan Difference()
         {
-            return this._stopTime - this._startTime;
+            return _stopTime - _startTime;
         }
     }
 }
