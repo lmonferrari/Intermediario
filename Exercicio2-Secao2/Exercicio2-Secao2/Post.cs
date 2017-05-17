@@ -4,11 +4,11 @@ namespace Exercicio2_Secao2
 {
     class Post
     {
-        public int UpVotes { get; private set; }
-        public int DownVotes { get; private set; }
-        public DateTime DateCreation { get; private set; }
-        public string Description { get; set; }
-        public string Title { get; set; }
+        private int _upVotes;
+        private int _downVotes;
+        private DateTime _creationDate;
+        private string _description;
+        private string _title;
 
         public Post(string title, string description)
         {
@@ -18,21 +18,30 @@ namespace Exercicio2_Secao2
             if (string.IsNullOrWhiteSpace(description))
                 description = "Oh Gosh! You forget the description!";
 
-            DateCreation = DateTime.Now;
-            this.Description = description;
-            this.Title = title;
-            this.UpVotes = 0;
-            this.DownVotes = 0;
+            _creationDate = DateTime.Now;
+            _description = description;
+            _title = title;
+            _upVotes = 0;
+            _downVotes = 0;
         }
 
         public void UpVote()
         {
-            UpVotes++;
+            _upVotes++;
         }
 
         public void DownVote()
         {
-            DownVotes++;
+            _downVotes++;
+        }
+
+        public override string ToString()
+        {
+            return "\nTitle: " + _title +
+                   "\nDescription :" + _description +
+                   "\nCreation date: " + _creationDate +
+                   "\nUp Votes: " + _upVotes +
+                   " - Down Votes: " + _downVotes;
         }
     }
 }
