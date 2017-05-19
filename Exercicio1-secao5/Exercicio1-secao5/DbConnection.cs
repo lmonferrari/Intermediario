@@ -6,7 +6,7 @@ namespace Exercicio1_secao5
     public abstract class DbConnection
     {
         private string _connectionString;
-        private TimeSpan _timeout;
+        private TimeSpan _timeout; //doing nothing with this variable
 
         public abstract void Open();
         public abstract void Close();

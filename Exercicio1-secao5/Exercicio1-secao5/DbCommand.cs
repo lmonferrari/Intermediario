@@ -4,8 +4,8 @@ namespace Exercicio1_secao5
 {
     class DbCommand
     {
-        private DbConnection _dbConnection;
-        private string _command;
+        private readonly DbConnection _dbConnection;
+        private readonly string _command;
 
         public DbCommand(DbConnection dbConnection, string command)
         {

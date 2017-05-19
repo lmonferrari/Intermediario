@@ -4,10 +4,10 @@
     {
         static void Main(string[] args)
         {
-            var sql = new DbCommand(new SqlConnection("SQL_DB"), "Select * from User");
+            var sql = new DbCommand(new SqlConnection("PATH_TO_SQL_DB"), "Select * from User");
             sql.Execute();
 
-            var oracle = new DbCommand(new OracleConnection("ORACLE_DB"), "Select * from User");
+            var oracle = new DbCommand(new OracleConnection("PATH_TO_ORACLE_DB"), "Select * from User");
             oracle.Execute();
         }
     }
