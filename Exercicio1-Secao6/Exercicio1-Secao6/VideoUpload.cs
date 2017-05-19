@@ -1,6 +1,6 @@
 ﻿namespace Exercicio1_Secao6
 {
-    class VideoUpload: IWorflow
+    class VideoUpload: IWorkflow
     {
         public void Execute()
         {

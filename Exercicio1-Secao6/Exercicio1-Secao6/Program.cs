@@ -1,15 +1,15 @@
 ﻿namespace Exercicio1_Secao6
 {
     class Program
-    {
-
+    {      
         static void Main(string[] args)
         {
-            var workFlowEngine = new WorkflowEngine(new VideoUpload());
-            workFlowEngine.Run();
+            var workflow = new Workflow();
+            workflow.AddActivity(new VideoUpload());
+            workflow.AddActivity(new SendEmail());
 
-            workFlowEngine = new WorkflowEngine(new SendEmail());
-            workFlowEngine.Run();
+            var workflowEngine = new WorkflowEngine();
+            workflowEngine.Run(workflow);
         }
     }
 }

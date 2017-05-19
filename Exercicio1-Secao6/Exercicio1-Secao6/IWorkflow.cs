@@ -1,6 +1,6 @@
 ﻿namespace Exercicio1_Secao6
 {
-    public interface IWorflow
+    public interface IWorkflow
     {
          void Execute();
     }

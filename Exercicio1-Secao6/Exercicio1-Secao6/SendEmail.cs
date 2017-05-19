@@ -2,7 +2,7 @@
 
 namespace Exercicio1_Secao6
 {
-    class SendEmail : IWorflow
+    class SendEmail : IWorkflow
     {
         public void Execute()
         {

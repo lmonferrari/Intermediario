@@ -5,19 +5,12 @@ namespace Exercicio1_Secao6
 
     class WorkflowEngine
     {
-        private readonly IList<IWorflow> _workflowList;
 
-        public WorkflowEngine(IWorflow workflow)
+        public void Run(Workflow workflow)
         {
-            _workflowList = new List<IWorflow>();
-            _workflowList.Add(workflow);
-        }
-
-        public void Run()
-        {
-            foreach (var workflow in _workflowList)
+            foreach (IWorkflow item in workflow.GetActivities())
             {
-                workflow.Execute();
+                item.Execute();
             }
         }
     }
